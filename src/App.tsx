@@ -26,7 +26,7 @@ function App() {
         <div className="max-w-3xl">
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-8 mb-8">
             <img 
-              src="./assets/images/seb.png" 
+              src="/assets/images/seb.png" 
               alt="Sébastien Criado" 
               className="w-32 h-32 rounded-full border-4 border-[#30964D]"
             />
