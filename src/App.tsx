@@ -1,10 +1,25 @@
-import React from 'react';
-import { Github, Linkedin, Mail, Code, Rocket, Brain, Coffee } from 'lucide-react';
+import React, { useEffect, useState } from 'react';
+import { Github, Linkedin, Mail, Code, Rocket, Brain, Coffee, ArrowUp } from 'lucide-react';
 import { useLanguage } from './contexts/LanguageContext';
 import { LanguageToggle } from './components/LanguageToggle';
 
 function App() {
   const { translations: t } = useLanguage();
+
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 300);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   return (
     <div className="min-h-screen bg-[#0a0b14]">
@@ -13,9 +28,9 @@ function App() {
         <div className="container py-4 flex justify-between items-center">
           <span className="text-xl font-semibold">sebastiencriado.com</span>
           <div className="flex items-center space-x-6">
-            <a href="#projects" className="nav-link">{t.nav.projects}</a>
-            <a href="#about" className="nav-link">{t.nav.about}</a>
-            <a href="#contact" className="nav-link">{t.nav.contact}</a>
+            <a href="#projects" className="nav-link hidden sm:block">{t.nav.projects}</a>
+            <a href="#about" className="nav-link hidden sm:block">{t.nav.about}</a>
+            <a href="#contact" className="nav-link hidden sm:block">{t.nav.contact}</a>
             <LanguageToggle />
           </div>
         </div>
@@ -100,7 +115,7 @@ function App() {
             <div>
               <h3 className="text-xl font-semibold mb-6">{t.about.tools.title}</h3>
               <div className="space-y-4">
-                {['Symfony', 'React', 'MySQL', 'Docker', 'Figma'].map((tool) => (
+                {['Symfony', 'React', 'Typescript', 'Docker', 'MySQL', 'Docker', 'Figma'].map((tool) => (
                   <div key={tool} className="flex items-center space-x-3">
                     <Code className="w-5 h-5 text-[#30964D]" />
                     <span>{tool}</span>
@@ -132,10 +147,19 @@ function App() {
             className="inline-flex items-center space-x-2 bg-[#30964D] text-white px-6 py-3 rounded-lg hover:bg-[#267a3f] transition-colors"
           >
             <Mail className="w-5 h-5" />
-            <span>contact.sebastiencriado@gmail.com</span>
+            <span className=' text-sm sm:text-lg'>contact.sebastiencriado@gmail.com</span>
           </a>
         </div>
       </section>
+      {showScrollTop && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-6 right-6 p-3 bg-[#30964D] rounded-full shadow-lg hover:bg-[#267a3f] transition-colors"
+          aria-label="Scroll to top"
+        >
+          <ArrowUp className="w-6 h-6" />
+        </button>
+      )}
     </div>
   );
 }
