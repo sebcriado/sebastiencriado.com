@@ -12,7 +12,7 @@ export const translations = {
     projects: {
       title: 'Projets',
       asteroidGame: {
-        title: 'Asteroid Game 🚀',
+        title: 'Asteroid Game',
         description: 'Un jeu vidéo simple où vous contrôlez un vaisseau spatial et essayez d\'éviter les astéroïdes.'
       },
       exerKids: {
@@ -20,8 +20,12 @@ export const translations = {
         description: 'Une application qui aide les enfants atteints de troubles divers (TDAH, TSA) à pratiquer la compensation de leurs difficultés.'
       },
       koffeez: {
-        title: 'Koffeez ☕️',
+        title: 'Koffeez',
         description: 'Une application pour les passionnés de café de spécialité et ceux qui souhaitent s\'y mettre. (En cours...)'
+      },
+      repriseSante: {
+        title: 'Reprise Santé',
+        description: 'Une application qui met en relation les médecins partant à la retraite avec leurs futurs remplaçants.'
       }
     },
     about: {
@@ -51,7 +55,7 @@ export const translations = {
     projects: {
       title: 'Projects',
       asteroidGame: {
-        title: 'Asteroid Game 🚀',
+        title: 'Asteroid Game',
         description: 'A simple game where you control a spaceship and try to avoid asteroids.'
       },
       exerKids: {
@@ -59,8 +63,12 @@ export const translations = {
         description: 'An application that helps children with various disorders (ADHD, ASD) practice compensating for their difficulties.'
       },
       koffeez: {
-        title: 'Koffeez ☕️',
+        title: 'Koffeez',
         description: 'An application for specialty coffee enthusiasts and those who want to get started with it. (Work in progress...)'
+      },
+      repriseSante: {
+        title: 'Reprise Santé',
+        description: 'An application that connects doctors retiring with their future replacements.'
       }
     },
     about: {

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Github, Linkedin, Mail, Code, Rocket, Brain, Coffee, ArrowUp } from 'lucide-react';
+import { Github, Linkedin, Mail, Code, Rocket, Brain, Coffee, ArrowUp, Briefcase, Stethoscope } from 'lucide-react';
 import { useLanguage } from './contexts/LanguageContext';
 import { LanguageToggle } from './components/LanguageToggle';
 
@@ -100,6 +100,16 @@ function App() {
               </div>
               <p className="text-gray-400">
                 {t.projects.koffeez.description}
+              </p>
+            </a>
+
+            <a href="https://github.com/sebcriado/RepriseSante" className="card group" target="_blank">
+              <div className="flex items-center mb-4">
+                <Stethoscope className="w-6 h-6 text-[#30964D] mr-3" />
+                <h3 className="text-xl font-bold">{t.projects.repriseSante.title}</h3>
+              </div>
+              <p className="text-gray-400">
+                {t.projects.repriseSante.description}
               </p>
             </a>
           </div>
