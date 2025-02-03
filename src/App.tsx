@@ -125,7 +125,7 @@ function App() {
             <div>
               <h3 className="text-xl font-semibold mb-6">{t.about.tools.title}</h3>
               <div className="space-y-4">
-                {['Symfony', 'React', 'Typescript', 'Docker', 'MySQL', 'Docker', 'Figma'].map((tool) => (
+                {['Symfony', 'React', 'Typescript', 'MySQL', 'Docker', 'Figma'].map((tool) => (
                   <div key={tool} className="flex items-center space-x-3">
                     <Code className="w-5 h-5 text-[#30964D]" />
                     <span>{tool}</span>
