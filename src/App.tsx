@@ -28,9 +28,9 @@ function App() {
         <div className="container py-4 flex justify-between items-center">
           <span className="text-xl font-semibold">sebastiencriado.com</span>
           <div className="flex items-center space-x-6">
-            <a href="#projects" className="nav-link hidden sm:block">{t.nav.projects}</a>
-            <a href="#about" className="nav-link hidden sm:block">{t.nav.about}</a>
-            <a href="#contact" className="nav-link hidden sm:block">{t.nav.contact}</a>
+            <a href="#projects" className="nav-link hidden sm:block" data-umami-event="Projects button">{t.nav.projects}</a>
+            <a href="#about" className="nav-link hidden sm:block" data-umami-event="About button">{t.nav.about}</a>
+            <a href="#contact" className="nav-link hidden sm:block" data-umami-event="Contact button">{t.nav.contact}</a>
             <LanguageToggle />
           </div>
         </div>
