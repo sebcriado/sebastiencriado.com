@@ -43,6 +43,7 @@ function App() {
             <img 
               src="/assets/images/seb.png" 
               alt="Sébastien Criado" 
+              loading='lazy'
               className="w-32 h-32 rounded-full border-4 border-[#30964D]"
             />
             <div>
@@ -170,6 +171,23 @@ function App() {
           <ArrowUp className="w-6 h-6" />
         </button>
       )}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Sébastien Criado",
+          "url": "https://sebastiencriado.com",
+          "jobTitle": "Développeur React/Symfony",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Liaisons Habitat"
+          },
+          "sameAs": [
+            "https://github.com/sebcriado",
+            "https://www.linkedin.com/in/s%C3%A9bastien-criado-19427a212/"
+          ]
+        })}
+      </script>
     </div>
   );
 }
