@@ -6,8 +6,8 @@ export const translations = {
       contact: 'contact'
     },
     hero: {
-      title: 'Développeur React/Symfony avec une forte orientation sur l\'expérience utilisateur, l\'accessibilité et la sécurité backend.',
-      currentRole: 'Actuellement chez Liaisons Habitat en tant que développeur Symfony'
+      title: 'En fin de contrat à partir du 24 mars 2025, je suis à la recherche d\'un poste de développeur React | TypeScript ou développeur Symfony.',
+      currentRole: 'Je suis à l’écoute de nouvelles opportunités sur Aix-en-Provence et Marseille ou en full remote.'
     },
     projects: {
       title: 'Projets',
@@ -49,8 +49,8 @@ export const translations = {
       contact: 'contact'
     },
     hero: {
-      title: 'React/Symfony developer with strong focus on user experience, accessibility and backend security.',
-      currentRole: 'Currently working at Liaisons Habitat as Symfony developer'
+      title: 'Available from March 24th, 2025, I am looking for a position as React | TypeScript developer or Symfony developer.',
+      currentRole: 'I am open to new opportunities in Aix-en-Provence and Marseille areas or fully remote.'
     },
     projects: {
       title: 'Projects',
